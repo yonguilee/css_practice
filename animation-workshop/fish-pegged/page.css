@@ -1,0 +1,80 @@
+h1 {
+	margin: 40px 0 0;
+}
+
+h2 {
+	margin: 0 0 180px;
+
+}
+
+.fish-anchor {
+	display: inline-block;
+	position: relative;
+}
+
+.fish {
+	color: #ffd47b;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+.bad-fish {
+	animation-name: bad-ani;
+}
+@keyframes bad-ani {
+	0%, 100% {
+		top: 0;
+		left: -100px;
+	}
+	25% {
+		top: -100px;
+		left: 0;
+	}
+	50% {
+		top: 0;
+		left: 100px;
+ 	}
+	75% {
+		top: 100px;
+		left: 0;
+	}
+}
+
+.good-fish {
+	animation-name: good-ani;
+}
+@keyframes good-ani {
+	0%, 100% {
+		transform: translate(-100px, 0);
+	}
+	25% {
+		transform: translate(0, -100px);
+	}
+	50% {
+		transform: translate(100px, 0);
+	}
+	75% {
+		transform: translate(0, 100px);
+	}
+}
+
+button {
+	position: absolute;
+	top: 540px;
+	left: calc(50%);
+	transform: translateX(-50%);
+	padding: 20px;
+	border: 4px solid #fff;;
+	border-radius: 10px;
+	font-size: 2rem;
+	color: #fff;
+	background-color: #222;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+button:hover {
+	background-color: #555;
+}

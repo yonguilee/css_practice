@@ -1,0 +1,42 @@
+h1 {
+	margin: 40px 0 0;
+}
+
+h2 {
+	margin: 0 0 80px;
+}
+
+.fish-anchor {
+	display: inline-block;
+	position: relative;
+}
+
+.fish {
+	color: #ffd47b;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+.bad-fish {
+	animation-name: bad-ani;
+}
+@keyframes bad-ani {
+	0%, 100% {
+		left: -10px;
+	}
+	50% {
+		left: 10px;
+ 	}
+}
+
+.good-fish {
+	animation-name: good-ani;
+}
+@keyframes good-ani {
+	0%, 100% {
+		transform: translateX(-10px);
+	}
+	50% {
+		transform: translateX(10px);
+	}
+}

@@ -1,0 +1,46 @@
+body {
+	overflow: hidden;
+}
+
+h1 {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	opacity: .1;
+	margin: 0;
+	font-size: 12rem;
+	line-height: 1;
+}
+
+.fish-anchor {
+	position: absolute;
+}
+
+.bad-approach .fish {
+	animation: bad-swim 8s infinite;
+}
+@keyframes bad-swim {
+	0%, 100% { left: -200px; }
+	50% { left: 200px; }
+}
+
+.bad-approach.will-change .fish {
+	will-change: top, left;
+}
+
+.good-approach .fish {
+	animation: good-swim 8s infinite;
+}
+@keyframes good-swim {
+	0%, 100% { transform: translateX(-200px); }
+	50% { transform: translateX(200px); }
+}
+
+.good-approach.will-change .fish {
+	will-change: transform;
+}
+
+.fish-1 { color: #ffd47b; }
+.fish-2 { color: #9bc95b; }
+.fish-3 { color: #95a9d6; }
+.fish-4 { color: #ffa8e1; }

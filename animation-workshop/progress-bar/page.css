@@ -1,0 +1,66 @@
+body {
+	color: #222;
+	background-color: #fff;
+}
+
+h1 {
+	margin: 40px 0 0;
+}
+
+h2 {
+	margin: 0 0 40px;
+}
+
+.anchor {
+	display: inline-block;
+	position: relative;
+}
+
+.progress-container {
+	overflow: hidden;
+	width: 430px;
+	height: 20px;
+	background-color: #ddd;
+}
+
+.progress {
+	height: 20px;
+	background-color: #95a9d6;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+.bad-progress {
+	animation-name: bad-ani;
+}
+@keyframes bad-ani {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+ 	}
+}
+
+.good-progress {
+	transform-origin: 0 0;
+	animation-name: good-ani;
+}
+@keyframes good-ani {
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(100%);
+	}
+}
+
+textarea {
+	margin-top: 60px;
+	width: 430px;
+	height: 250px;
+	padding: 20px;
+	border: 2px dashed #999;
+	font: 1.4rem/1.4 monospace;
+	resize: none;
+}

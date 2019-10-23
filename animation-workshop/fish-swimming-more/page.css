@@ -1,0 +1,34 @@
+body {
+	overflow: hidden;
+}
+
+h1 {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	opacity: .1;
+	margin: 0;
+	font-size: 12rem;
+	line-height: 1;
+}
+
+.bad-approach .fish {
+	transition: top 5s, left 5s;
+}
+
+.bad-approach.will-change .fish {
+	will-change: top, left;
+}
+
+.good-approach .fish {
+	transition: transform 5s;
+}
+
+.good-approach.will-change .fish {
+	will-change: transform;
+}
+
+.fish-1 { color: #ffd47b; }
+.fish-2 { color: #9bc95b; }
+.fish-3 { color: #95a9d6; }
+.fish-4 { color: #ffa8e1; }

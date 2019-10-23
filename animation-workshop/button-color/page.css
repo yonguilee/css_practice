@@ -1,0 +1,69 @@
+body {
+	color: #222;
+	background-color: #fff;
+}
+
+h1 {
+	margin: 40px 0 0;
+}
+
+h2 {
+	margin: 0 0 40px;
+}
+
+.anchor {
+	display: inline-block;
+	position: relative;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 60px;
+	border: none;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: #fff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.bad-button {
+	animation-name: bad-ani;
+}
+@keyframes bad-ani {
+	0%, 100% {
+		background-color: #dbdbdb;
+	}
+	80% {
+		background-color: #ffa8e1;
+ 	}
+}
+
+.good-button {
+	background-color: #ffa8e1;
+	animation-name: good-ani;
+}
+@keyframes good-ani {
+	0%, 100% {
+		filter: grayscale(100%) brightness(115%);
+	}
+	80% {
+		filter: none;
+ 	}
+}
+
+textarea {
+	margin-top: 60px;
+	width: 480px;
+	height: 380px;
+	padding: 20px;
+	border: 2px dashed #999;
+	font: 1.4rem/1.4 monospace;
+	resize: none;
+}
